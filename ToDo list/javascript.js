@@ -22,11 +22,6 @@ function adicionarTarefa(){
                 
                 escreverTarefa()
                 
-            }else{
-                Tarefa[i+1] = novaTarefa
-
-                escreverTarefa()
-               
             }
             
     }else{

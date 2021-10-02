@@ -31,6 +31,7 @@ form input[type="text"]{
     border: none ;
     border-bottom: 1px solid;
     inset: none;
+    background: #fff;
 }
 
 form input[type="text"]:focus{
