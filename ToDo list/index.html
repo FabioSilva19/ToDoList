@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>ToDO list</title>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
     <form>
         <label for="tarefa">Digite uma nova tarefa</label>
-        <input type="text" id="tarefa">
-        <input type="button" value="Adicionar tarefa"  onclick="adicionarTarefa()">
+        <input type="text" id="tarefa" placeholder="Digite aqui" onkeypress="handle(event)">
+        <input type="button" value="Adicionar tarefa"  onclick="adicionarTarefa()" >
 
         <div id="tarefas">
-            
+
         </div>
     </form>
 </body>
