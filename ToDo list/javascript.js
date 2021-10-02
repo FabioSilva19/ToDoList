@@ -12,24 +12,12 @@ function adicionarTarefa(){
             if(Tarefa[i] === undefined){
                 Tarefa[i] = novaTarefa
                 
-                var paragrafo = document.createElement("p")
-    var texto = document.createTextNode(i+1 + " " +Tarefa[i])
-    paragrafo.appendChild(texto)
-    
-    divTarefas = document.getElementById("tarefas");
-    console.log(Tarefa[i])
-    divTarefas.appendChild(paragrafo)
+                escreverTarefa()
                 
             }else{
                 Tarefa[i+1] = novaTarefa
 
-                var paragrafo = document.createElement("p")
-    var texto = document.createTextNode(i+1 + " - " +Tarefa[i])
-    paragrafo.appendChild(texto)
-    
-    divTarefas = document.getElementById("tarefas");
-    console.log(Tarefa[i])
-    divTarefas.appendChild(paragrafo)
+                escreverTarefa()
                
             }
             
@@ -43,5 +31,14 @@ function adicionarTarefa(){
     i++
 }
 
+function escreverTarefa(){
+    var paragrafo = document.createElement("p")
+    var texto = document.createTextNode(i+1 + " - " +Tarefa[i])
+    paragrafo.appendChild(texto)
+    
+    divTarefas = document.getElementById("tarefas");
+    console.log(Tarefa[i])
+    divTarefas.appendChild(paragrafo)
+}
 
 
